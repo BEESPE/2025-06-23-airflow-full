@@ -1,0 +1,5 @@
+FROM apache/airflow:2.2.0-python3.8
+
+RUN pip install plyvel
+
+COPY ./dags /opt/airflow/dags
